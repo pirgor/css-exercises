@@ -27,3 +27,64 @@ body {
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
 }
+
+/** My solution **/
+.header{
+  display: flex;
+  align-items: center;
+  font-size: 32px;
+  font-weight: 900;
+  padding-left: 16px; /** or use shorthand padding: 0 16px **/
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /** not needed in solution**/
+}
+
+.footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebar{
+  flex-shrink: 0;
+  width: 300px; /** ALREADY SET TO THIS **/
+  padding: 16px;
+}
+
+.content{
+  display: flex;
+  flex: 1;
+}
+
+.cards{
+  display: flex;
+  padding: 48px;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.card{
+  /** max-height: 400px; not needed in solution because flex will fill in the spaces automatically **/
+  width: 300px; 
+  padding: 16px;
+}
+
+ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li{
+  margin-bottom: 8px; /** SOLUTION IS 16px **/
+}
+
+a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 24px;
+}

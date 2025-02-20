@@ -5,6 +5,10 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /**NOT USED IN SOLUTION**/
 }
 
 img {
@@ -14,13 +18,68 @@ img {
 button {
   font-family: Roboto, sans-serif;
   border: none;
-  border-radius: 8px;
+  border-radius: 3px;
+  padding: 8px 16px; /**16px not added in my SOLUTION**/
   background: #eee;
 }
+
 
 input {
   border: 1px solid #ddd;
   border-radius: 16px;
   padding: 8px 24px;
   width: 400px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: gray;  /** or color: #666 **/
+}
+
+.content {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+
+  /** additional to SOLUTION**/
+  flex: 1;  /**flex grow = 1  **/
+
+}
+
+
+.header,
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  /**NOT USED IN SOLUTION**/
+  padding: 8px;
+}
+
+/**MY SOLUTION 
+.left-links,
+.right-links {
+  display: flex;
+  padding: 0 16px 0 16px;
+  gap: 16px;
+}
+**/
+
+/** ALTERNATIVE IS THIS **/
+ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 16px;
+}
+
+.footer {
+  background: #eeeeee;
 }
